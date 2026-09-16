@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CommunityHub Privacy Policy</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  footer { margin-top: 3rem; color: #666; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+  <h1>CommunityHub Privacy Policy</h1>
+  <p>Last updated: <!-- fill in date --></p>
+
+  <p>
+    CommunityHub is a private, single-tenant Android app used by one apartment community
+    (Mittal Park View Residency, Kadma, Jamshedpur) to manage maintenance and electricity
+    billing. It is not distributed publicly and has no server component.
+  </p>
+
+  <h2>What data the app accesses</h2>
+  <p>
+    CommunityHub stores billing, property, and payment records locally on the device in an
+    offline SQLite database. This data never leaves the device except for the two cases
+    below, both of which the user directly controls:
+  </p>
+  <ul>
+    <li>
+      <strong>Google Drive backup:</strong> the app requests the
+      <code>drive.file</code> scope only &mdash; the narrowest Google Drive permission,
+      which lets the app read and write only the specific backup files it itself creates.
+      It cannot see, list, or access any other file in the user's Drive.
+    </li>
+    <li>
+      <strong>WhatsApp / email sharing:</strong> generated bill PDFs are shared to WhatsApp
+      or email only when the user explicitly taps a share action.
+    </li>
+  </ul>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>No analytics, tracking, or advertising SDKs.</li>
+    <li>No data is sold, rented, or shared with third parties.</li>
+    <li>No account creation or login beyond Google Sign-In for the Drive backup feature.</li>
+  </ul>
+
+  <h2>Data retention and deletion</h2>
+  <p>
+    All data is stored on the user's own device and Google Drive. Uninstalling the app
+    removes the local database. Drive backup files can be deleted directly from Google
+    Drive at any time.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <!-- your email --></p>
+
+  <footer>CommunityHub is developed and used privately; this policy exists to satisfy Google OAuth publishing requirements for the drive.file scope.</footer>
+</body>
+</html>
